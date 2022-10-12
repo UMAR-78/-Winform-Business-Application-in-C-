@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6666FCFC-4C07-4CAC-8A7A-559253E5B6AA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Business_Application</RootNamespace>
+    <AssemblyName>Business Application</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add_employ_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_employ_Form.Designer.cs">
+      <DependentUpon>Add_employ_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_product_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_product_form.Designer.cs">
+      <DependentUpon>Add_product_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_menu_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_menu_form.Designer.cs">
+      <DependentUpon>Admin_menu_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BL\Costumer.cs" />
+    <Compile Include="BL\Costumer_order_products.cs" />
+    <Compile Include="BL\Employ.cs" />
+    <Compile Include="BL\Products.cs" />
+    <Compile Include="Check_Stock_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Check_Stock_form.Designer.cs">
+      <DependentUpon>Check_Stock_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DL\CostumerDL.cs" />
+    <Compile Include="DL\EmployDL.cs" />
+    <Compile Include="DL\ProductsDL.cs" />
+    <Compile Include="EmployForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployForm.Designer.cs">
+      <DependentUpon>EmployForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmplyLogin_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmplyLogin_Form.Designer.cs">
+      <DependentUpon>EmplyLogin_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Generate_Bill_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Generate_Bill_form.Designer.cs">
+      <DependentUpon>Generate_Bill_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Online_Costumer_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Online_Costumer_form.Designer.cs">
+      <DependentUpon>Online_Costumer_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\FirstForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\FirstForm.Designer.cs">
+      <DependentUpon>FirstForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SortForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SortForm.Designer.cs">
+      <DependentUpon>SortForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Take_order_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Take_order_form.Designer.cs">
+      <DependentUpon>Take_order_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update_Delete_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update_Delete_Form.Designer.cs">
+      <DependentUpon>Update_Delete_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update_employ_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update_employ_form.Designer.cs">
+      <DependentUpon>Update_employ_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update_Form.Designer.cs">
+      <DependentUpon>Update_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Up_Del_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Up_Del_Form.Designer.cs">
+      <DependentUpon>Up_Del_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Employ_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Employ_form.Designer.cs">
+      <DependentUpon>View_Employ_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Product_from.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Product_from.Designer.cs">
+      <DependentUpon>View_Product_from.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add_employ_Form.resx">
+      <DependentUpon>Add_employ_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_product_form.resx">
+      <DependentUpon>Add_product_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_menu_form.resx">
+      <DependentUpon>Admin_menu_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Check_Stock_form.resx">
+      <DependentUpon>Check_Stock_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployForm.resx">
+      <DependentUpon>EmployForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmplyLogin_Form.resx">
+      <DependentUpon>EmplyLogin_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generate_Bill_form.resx">
+      <DependentUpon>Generate_Bill_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Online_Costumer_form.resx">
+      <DependentUpon>Online_Costumer_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Resources\FirstForm.resx">
+      <DependentUpon>FirstForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SortForm.resx">
+      <DependentUpon>SortForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Take_order_form.resx">
+      <DependentUpon>Take_order_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update_Delete_Form.resx">
+      <DependentUpon>Update_Delete_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update_employ_form.resx">
+      <DependentUpon>Update_employ_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update_Form.resx">
+      <DependentUpon>Update_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Up_Del_Form.resx">
+      <DependentUpon>Up_Del_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Employ_form.resx">
+      <DependentUpon>View_Employ_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Product_from.resx">
+      <DependentUpon>View_Product_from.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="stationery-apointment-book-pencil-ruler.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colorful-school-supplies-shopping-basket-gray-background-with-copy-text-space-stack-books-with-colorful-covers-concept-returning-school-new-academic-year.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-school-bag-with-essential-supplies.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\school-supplies-with-medical-face-mask-blue-flat-lay-top-view-layout-template-free-space.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\school-supplies-top-view-chalkboard.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Addd-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\market-share-competitor-excellent-growing-with-stocks.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closeup-view-handshake-two-businessmen-suits-shaking-hands.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silhouette-confident-businesspeople.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\businessman-logging-his-tablet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-karolina-grabowska-6952435.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picsart_22-08-28_12-06-37-8611.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
